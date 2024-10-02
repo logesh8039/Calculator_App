@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h2>Calculator</h2>
+    <div class="container">
+        <input type="text" readonly placeholder="0" class="input-box">
+        <div class="btns">
+            <button onclick="clearInput()" class="numbers special">AC</button>
+            <button onclick="deleteNumber()" class="numbers special">Del</button>
+            <button onclick="signChange('')" class="numbers special">+/-</button>
+            <button onclick="append('/')" class="numbers special">/</button>
+            <button onclick="append('7')" class="numbers">7</button>
+            <button onclick="append('8')" class="numbers">8</button>
+            <button onclick="append('9')" class="numbers">9</button>
+            <button onclick="append('*')" class="numbers special">*</button>
+            <button onclick="append('4')" class="numbers">4</button>
+            <button onclick="append('5')" class="numbers">5</button>
+            <button onclick="append('6')" class="numbers">6</button>
+            <button onclick="append('-')" class="numbers special">-</button>
+            <button onclick="append('1')" class="numbers">1</button>
+            <button onclick="append('2')" class="numbers">2</button>
+            <button onclick="append('3')" class="numbers">3</button>
+            <button onclick="append('+')" class="numbers special">+</button>
+            <button onclick="append('%')" class="numbers">%</button>
+            <button onclick="append('0')" class="numbers">0</button>
+            <button onclick="append('.')" class="numbers">.</button>
+            <button onclick="calculate()" class="numbers special equal">=</button>
+        </div>
+    </div>
+    <script src="Assets/JS/script.js"></script>
+    
+</body>
+</html>
